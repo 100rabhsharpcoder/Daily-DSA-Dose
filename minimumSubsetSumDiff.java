@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MinimumSubsetSumDiff {
+public class minimumSubsetSumDiff {
     static int minDiff = Integer.MAX_VALUE;
     static String result = "";
 
