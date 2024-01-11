@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * PermutationOfString
@@ -21,8 +22,8 @@ public class PermutationOfString {
 
     public static void main(String[] args) {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
+        Scanner scn  =  new Scanner(System.in);
+        String str = scn.next();
 
         HashMap<Character, Integer> fmap = new HashMap<>();
         for(char ch :  str.toCharArray()){
