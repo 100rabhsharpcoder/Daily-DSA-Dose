@@ -20,7 +20,7 @@ public class permutationOfString2 {
             spots[i] = ch;
             lastOccurences.put(ch,i);
             generateWord(cc+1, str, spots, lastOccurences);
-            lastOccurences.put(ch, -1);
+            lastOccurences.put(ch, lo);
             spots[i] =  null;
         }
     }
