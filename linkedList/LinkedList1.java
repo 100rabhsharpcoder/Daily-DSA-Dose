@@ -60,5 +60,28 @@ public class LinkedList1 {
 
         return head;
     }
+
+    // deleting the nodes form Linked List 
+    public ListNode deleteFrombegening(ListNode head){
+        head =  head.next;
+        ListNode ptr  =  head;
+        while (ptr.next.next != null) {
+            ptr= ptr.next;
+        }
+        ptr.next =  null;
+        return head;
+    }
+
+    public ListNode deletefromMiddle( ListNode head , int position){
+        ListNode ptr =  head;
+        for(int i=0; i<position-1; i++){
+            ptr = ptr.next;
+        }
+
+        ListNode DeleteNode = ptr.next;
+        ListNode newNode = DeleteNode.next;
+        ptr.next = newNode;
+        return head;
+    }
 }
 
