@@ -39,4 +39,34 @@ public class ReverseTheLInkedList {
             System.out.println(valStack.pop());
         }
     }
+
+    // printing the list using the recursion
+
+    public void printListUsingRecursion(ListNode head){
+        if (head.next == null) {
+            return;
+        }
+        printListUsingRecursion(head.next);
+        System.out.println(head.val);
+    }
+
+    // remove dep[licate from ll
+
+    public ListNode removeDuplicate(ListNode head){
+        ListNode preNode  = head;
+        ListNode temp = preNode.next;
+
+        while (temp !=null) {
+            if (temp.val == preNode.val) {
+                temp= temp.next;
+                continue;
+            }
+
+            preNode.next =temp;
+            preNode = temp ;
+            temp = temp.next;
+        }
+        preNode.next =null;
+        return head;
+    }
 }
