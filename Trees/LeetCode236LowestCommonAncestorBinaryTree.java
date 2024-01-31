@@ -28,7 +28,7 @@ public class LeetCode236LowestCommonAncestorBinaryTree {
     }
 
     public TreeNode lca(TreeNode root, int p, int q){
-        if(root == null || root == p || root == q){
+        if(root == null || root.val == p || root.val == q){
             return root;
         }
         TreeNode left = lca(root.left, p, q);
