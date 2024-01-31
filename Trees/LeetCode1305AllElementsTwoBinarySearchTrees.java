@@ -29,7 +29,7 @@ public class LeetCode1305AllElementsTwoBinarySearchTrees {
             this.right = right;
         }
     }
-    public TreeNode getAllElment(TreeNode root1, TreeNode root2){
+    public List<Integer> getAllElment(TreeNode root1, TreeNode root2){
          List<Integer> list1 = new ArrayList<>();
          List<Integer> list2 = new ArrayList<>();
          List<Integer> result = new ArrayList<>();
